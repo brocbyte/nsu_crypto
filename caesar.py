@@ -19,7 +19,8 @@ print(known_plaintext_attack("uftu", "test") == 1)
 print(known_plaintext_attack("kvjk", "test") == 17)
 
 def ciphertext_only_attack(cipherText, dictionary = []):
-    print(("without" if len(dictionary) == 0 else "with") + " dictionary")
+    print("======================")
+    print(f"dictionary: {dictionary}")
     for key in range(26):
         plaintext = caesar(cipherText, -key)
         if len(dictionary) == 0 or [item for item in dictionary if item in plaintext]:
