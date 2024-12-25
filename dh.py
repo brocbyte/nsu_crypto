@@ -1,7 +1,5 @@
 import random
 
-# based on https://pub.deadnet.se/Books_on_Tech_Survival_woodworking_foraging_etc/cryptography_engineering_design_principles_and_practical_applications.pdf
-
 def isPrime(n):
     if n < 2:
         return False
